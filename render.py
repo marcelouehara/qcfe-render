@@ -156,7 +156,7 @@ def main():
     ap.add_argument("src")
     ap.add_argument("out")
     ap.add_argument("--cam", required=True, help="x,y,w,h em 1920x1080")
-    ap.add_argument("--layout", default="cam_top", choices=["cam_top", "cam_bottom"])
+    ap.add_argument("--layout", default="cam_top", choices=["cam_top", "cam_bottom", "full"])
     ap.add_argument("--gx", type=float, default=REF_W / 2)
     ap.add_argument("--title", default="")
     ap.add_argument("--credit", default="")
@@ -167,6 +167,7 @@ def main():
     sx, sy = iw / REF_W, ih / REF_H
     cx, cy, cw, ch = (float(v) for v in a.cam.split(","))
     cx, cy, cw, ch = int(cx * sx), int(cy * sy), int(cw * sx), int(ch * sy)
+    cam_x0, cam_x1 = cx, cx + cw  # caixa original da cam, para o recorte do gameplay não pegar a borda dela
 
     cam_h = max(480, min(760, round(W * ch / cw / 2) * 2))  # mantém a proporção da cam
     # cam muito alta (vertical) ou muito larga: recorta a caixa na proporção da área, sem esticar
@@ -181,17 +182,29 @@ def main():
     game_h = H - cam_h
     gw = int(ih * W / game_h) // 2 * 2  # recorte do gameplay com a proporção da área de baixo
     gx = int(min(max(a.gx * sx - gw / 2, 0), iw - gw))
+    if a.layout != "full" and gx < cam_x1 and gx + gw > cam_x0:  # recorte encosta na cam: empurra para longe
+        novo = cam_x0 - gw if (cam_x0 + cam_x1) / 2 > iw / 2 else cam_x1
+        if 0 <= novo <= iw - gw:
+            gx = int(novo)
 
     words = transcribe(a.src, a.model)
-    seam = cam_h if a.layout == "cam_top" else game_h
-    cap_y = seam + 190 if a.layout == "cam_top" else seam - 190
+    if a.layout == "full":  # sem facecam: gameplay em tela cheia (recorte 9:16)
+        fw = int(ih * W / H) // 2 * 2
+        fx = int(min(max(a.gx * sx - fw / 2, 0), iw - fw))
+        cap_y, seam = 1250, 330
+        base = f"[0:v]crop={fw}:{ih}:{fx}:0,scale={W}:{H},setsar=1,fps=30[base];"
+        cw = ch = cx = cy = cam_h = 0
+        gw, gx, game_h = fw, fx, H
+    else:
+        seam = cam_h if a.layout == "cam_top" else game_h
+        cap_y = seam + 190 if a.layout == "cam_top" else seam - 190
+        order = "[cam][g]" if a.layout == "cam_top" else "[g][cam]"
+        base = (f"[0:v]crop={cw}:{ch}:{cx}:{cy},scale={W}:{cam_h},setsar=1[cam];"
+                f"[0:v]crop={gw}:{ih}:{gx}:0,scale={W}:{game_h},setsar=1[g];"
+                f"{order}vstack=inputs=2,fps=30[base];")
     with tempfile.TemporaryDirectory() as tmp:
         concat = build_overlay(words, a.title, a.credit, cap_y, seam, duration, Path(tmp))
-        order = "[cam][g]" if a.layout == "cam_top" else "[g][cam]"
-        fc = (f"[0:v]crop={cw}:{ch}:{cx}:{cy},scale={W}:{cam_h},setsar=1[cam];"
-              f"[0:v]crop={gw}:{ih}:{gx}:0,scale={W}:{game_h},setsar=1[g];"
-              f"{order}vstack=inputs=2,fps=30[base];"
-              f"[1:v]format=rgba[ov];[base][ov]overlay=0:0:format=auto:shortest=0:eof_action=pass[v];"
+        fc = (base + f"[1:v]format=rgba[ov];[base][ov]overlay=0:0:format=auto:shortest=0:eof_action=pass[v];"
               f"[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[a]")
         subprocess.run([FFMPEG, "-v", "error", "-y", "-i", a.src, "-f", "concat", "-safe", "0", "-i", str(concat),
                         "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", f"{duration:.3f}",
