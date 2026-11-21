@@ -23,6 +23,30 @@ import cv2
 HERE = Path(__file__).parent
 MODEL = str(HERE / "models" / "face_detection_yunet_2023mar.onnx")
 FACE_LIMIT = 0.12  # rosto mais largo que 12% da tela = câmera em tela cheia
+ALVO, MINIMO, MAXIMO = 75.0, 65.0, 90.0  # duração do corte em segundos (TikTok só monetiza acima de 1 min)
+
+
+def janela(offset: float, dur: float) -> tuple[float, float]:
+    """Trecho da VOD em volta do clipe: ~70% do contexto extra antes (o setup) e ~30% depois (a reação)."""
+    extra = max(0.0, ALVO - dur)
+    ini = max(0.0, offset - extra * 0.7)
+    fim = offset + dur + extra * 0.3
+    if fim - ini < MINIMO:
+        fim = ini + MINIMO
+    return ini, min(fim, ini + MAXIMO)
+
+
+def baixar(c: dict, destino: str) -> str | None:
+    """Baixa o trecho estendido da VOD. Sem VOD pública não dá para passar de 1 min: devolve o motivo."""
+    if not c.get("video_id") or c.get("vod_offset") is None:
+        return "sem_vod"
+    ini, fim = janela(float(c["vod_offset"]), float(c.get("duration") or 30))
+    r = subprocess.run(["yt-dlp", "-q", "--no-warnings", "-f", "best[height<=1080]", "--force-overwrites",
+                        "--download-sections", f"*{ini:.0f}-{fim:.0f}", "-o", destino,
+                        f"https://www.twitch.tv/videos/{c['video_id']}"], capture_output=True, text=True)
+    if r.returncode != 0 or not Path(destino).exists():
+        return "vod_inscritos" if "subscriber" in r.stderr else "download"
+    return None
 
 
 def so_camera(video: str) -> tuple[bool, list[float]]:
@@ -66,9 +90,10 @@ def main():
     pulados, escolhido = [], None
     for c in job["candidatos"]:
         src = f"/tmp/clip_{c['clip_id'][:40]}.mp4"
-        r = subprocess.run(["yt-dlp", "-q", "--no-warnings", "-f", "best[height<=1080]", "-o", src, c["url"]])
-        if r.returncode != 0 or not Path(src).exists():
-            pulados.append({"clip_id": c["clip_id"], "motivo": "download"})
+        erro = baixar(c, src)
+        if erro:
+            print(c["clip_id"], c["streamer"], "->", erro, flush=True)
+            pulados.append({"clip_id": c["clip_id"], "motivo": erro})
             continue
         cam, larg = so_camera(src)
         print(c["clip_id"], c["streamer"], "rostos:", larg, "-> so camera" if cam else "-> ok", flush=True)
@@ -86,7 +111,8 @@ def main():
     res = {"id": jid, "status": "ok" if escolhido else "sem_corte", "teste": job.get("teste", False),
            "clip": escolhido, "pulados": pulados}
     (out / f"{jid}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
-    novos = [p["clip_id"] for p in pulados if p["motivo"] == "so_camera"]
+    # descartes definitivos não voltam como candidato (sem_vod pode ser VOD ainda processando: tenta de novo)
+    novos = [p["clip_id"] for p in pulados if p["motivo"] in ("so_camera", "vod_inscritos")]
     if escolhido and not job.get("teste"):
         novos.append(escolhido["clip_id"])
     (out / "historico_add.json").write_text(json.dumps(novos))
