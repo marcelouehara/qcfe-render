@@ -1,0 +1,13 @@
+{
+  "_como_usar": "liberado=true so com prova de permissao de corte (link em 'prova'). cam = x,y,w,h da facecam num quadro 1920x1080. gx = centro do recorte do gameplay (padrao 960). Medido em 21/11/2026; streamer que muda o layout da live precisa remedir.",
+  "streamers": [
+    {"login": "hayashii", "id": "29094596", "cam": "1428,120,460,256", "layout": "cam_top", "gx": 960, "liberado": false, "prova": ""},
+    {"login": "xarola_", "id": "181743137", "cam": "0,124,500,276", "layout": "cam_top", "gx": 960, "liberado": false, "prova": ""},
+    {"login": "facada", "id": "471175257", "cam": "0,592,444,252", "layout": "cam_top", "gx": 960, "liberado": false, "prova": ""},
+    {"login": "rodil", "id": "127863425", "cam": "1514,216,390,224", "layout": "cam_top", "gx": 960, "liberado": false, "prova": ""},
+    {"login": "thedarkness", "id": "52614128", "cam": "1644,296,266,460", "layout": "cam_top", "gx": 960, "liberado": false, "prova": ""},
+    {"login": "cellbit", "id": "28579002", "cam": "1336,784,364,296", "layout": "cam_top", "gx": 880, "liberado": false, "prova": ""},
+    {"login": "tioorochitwitch", "id": "197688174", "cam": "1520,440,396,224", "layout": "cam_top", "gx": 960, "liberado": false, "prova": ""},
+    {"login": "move_mind", "id": "104320683", "cam": "1594,414,306,256", "layout": "cam_top", "gx": 960, "liberado": false, "prova": ""}
+  ]
+}

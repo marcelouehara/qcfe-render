@@ -1,0 +1,5 @@
+faster-whisper
+numpy
+pillow
+opencv-python-headless
+yt-dlp[default]
