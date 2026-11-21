@@ -49,6 +49,10 @@ jobs:
       - name: Escolher e renderizar
         env:
           JOB: ${{ toJson(github.event.client_payload) }}
+          # YouTube pela API (secrets do repo); sem eles o corte.py pula a API e o n8n manda o YouTube pelo Buffer
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python3 corte.py
 
       # Branch "videos" sem historico git: guarda os 10 cortes mais recentes + historico.json

@@ -208,7 +208,7 @@ def main():
               f"[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[a]")
         subprocess.run([FFMPEG, "-v", "error", "-y", "-i", a.src, "-f", "concat", "-safe", "0", "-i", str(concat),
                         "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", f"{duration:.3f}",
-                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-maxrate", "5M", "-bufsize", "10M", "-pix_fmt", "yuv420p",
                         "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", a.out], check=True)
     Path(a.out).with_suffix(".words.json").write_text(json.dumps(words, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"ok {a.out} | cam {cw}x{ch}@{cx},{cy} -> {W}x{cam_h} | gameplay {gw}x{ih}@{gx} -> {W}x{game_h} | {len(words)} palavras")

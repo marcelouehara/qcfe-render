@@ -154,6 +154,8 @@ def compilacao(c: dict, destino: Path, pulados: list) -> dict | None:
     partes, total = [], 0.0
     for i, x in enumerate([c] + c.get("extras", [])):
         x = {**c, **x}  # extras herdam cam/layout/gx do streamer
+        if partes and total + float(x.get("duration") or 30) > 120:  # compilação de no máximo ~2 min
+            continue
         src = f"/tmp/comp_{i}.mp4"
         r = subprocess.run(["yt-dlp", "-q", "--no-warnings", "-f", "best[height<=1080]", "--force-overwrites",
                             "-o", src, x["url"]], capture_output=True, text=True)
@@ -181,6 +183,21 @@ def compilacao(c: dict, destino: Path, pulados: list) -> dict | None:
             "compilacao": [x["clip_id"] for x, _ in partes]}
 
 
+def textos(c: dict, titulo_principal: str) -> dict:
+    """Título e legenda dos posts (fonte única: o n8n só repassa ao Buffer)."""
+    s = c["streamer"]
+    nome = s[:1].upper() + s[1:]
+    comp = len(c.get("compilacao") or []) > 1
+    generico = titulo_principal.endswith("no GTA 6")
+    t = f"{nome} no GTA 6: {len(c['compilacao'])} momentos da live" if comp and generico else titulo_principal
+    tag = re.sub(r"[^a-z0-9]", "", s.lower())
+    legenda = (f"{t}\n\n{'Cortes' if comp else 'Corte'} da live do {s} na Twitch (twitch.tv/{s})\n\n"
+               f"#gta6 #gtavi #gta #{tag} #cortes")
+    titulo_yt = t if "gta" in t.lower() else f"{t} | {nome} GTA 6"
+    return {"titulo": t, "legenda": legenda, "titulo_yt": titulo_yt[:100], "descricao_yt": legenda + " #shorts",
+            "tags": ["gta 6", "gta vi", "gta6", "cortes", s]}
+
+
 def main():
     job = json.loads(os.environ["JOB"])
     jid = job["id"]
@@ -206,10 +223,19 @@ def main():
         renderizar(src, out / f"{jid}.mp4", c, t)
         escolhido = {**c, "title": t, "duration": duracao(out / f"{jid}.mp4")}
         break
+    posts, yt = None, None
     if escolhido:
         escolhido.pop("extras", None)
+        cand = next(c for c in job["candidatos"] if c["clip_id"] == escolhido["clip_id"])
+        posts = textos(escolhido, titulo(cand.get("title", ""), escolhido["streamer"]))
+        # YouTube pela API (cota ~6 uploads/dia); se falhar (ex.: quotaExceeded) o n8n manda pelo Buffer
+        if not job.get("teste") and job.get("youtube_api", True) and os.environ.get("YT_REFRESH_TOKEN"):
+            import youtube
+            yt = youtube.upload(str(out / f"{jid}.mp4"), posts["titulo_yt"], posts["descricao_yt"], posts["tags"],
+                                job.get("publicar_em"))
+            print("youtube:", yt, flush=True)
     res = {"id": jid, "status": "ok" if escolhido else "sem_corte", "teste": job.get("teste", False),
-           "clip": escolhido, "pulados": pulados}
+           "clip": escolhido, "posts": posts, "youtube": yt, "pulados": pulados}
     (out / f"{jid}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
     # descartes definitivos não voltam como candidato (sem_vod pode ser VOD ainda processando: tenta de novo)
     novos = [p["clip_id"] for p in pulados if p["motivo"] in ("so_camera", "vod_inscritos")]
