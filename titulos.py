@@ -25,7 +25,7 @@ Fala do streamer no corte (transcricao automatica, pode ter erros; pode estar va
 \"\"\"{fala}\"\"\"
 As imagens sao quadros do corte (em cima a camera do streamer, embaixo o jogo).
 
-Escreva em portugues do Brasil:
+Escreva em português do Brasil, com acentuação e ortografia corretas (ex.: "vê", "relação", "não"):
 - titulo: ate 60 caracteres, chamativo, com o nome do streamer, dizendo o que acontece. So use o que esta na
   fala ou nas imagens. Sem inventar, sem palavrao, sem hashtag, sem emoji.
 - gancho: 2 a 5 palavras em MAIUSCULAS para aparecer no video nos primeiros segundos (curiosidade, sem spoiler).
