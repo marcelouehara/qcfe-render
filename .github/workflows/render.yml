@@ -53,6 +53,8 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          # títulos e gancho com Gemini Flash; sem o secret, usa o título da Twitch
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 corte.py
 
       # Branch "videos" sem historico git: guarda os 10 cortes mais recentes + historico.json

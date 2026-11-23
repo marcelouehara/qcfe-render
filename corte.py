@@ -71,7 +71,7 @@ def so_camera(video: str) -> tuple[bool, list[float]]:
         larguras.append(round(float(maior), 3))
     cap.release()
     grandes = sum(x > FACE_LIMIT for x in larguras)
-    return grandes * 2 > len(larguras), larguras
+    return grandes * 2 >= len(larguras), larguras  # metade ou mais dos quadros só com a câmera: descarta
 
 
 def achar_cam(video: str, dica: str | None) -> str | None:
@@ -143,15 +143,18 @@ def renderizar(src, destino, c, t):
     cam = achar_cam(src, c.get("cam"))
     layout = c.get("layout", "cam_top") if cam else "full"
     print("    cam:", cam or "nenhuma (layout so gameplay)", flush=True)
+    ia_json = Path(destino).with_suffix(".ia.json")
+    ia_json.unlink(missing_ok=True)
     subprocess.run([sys.executable, str(HERE / "render.py"), src, str(destino),
                     "--cam", cam or "0,0,1,1", "--layout", layout, "--gx", str(c.get("gx", 960)),
-                    "--title", t, "--credit", c["streamer"]], check=True)
+                    "--title", t, "--credit", c["streamer"], "--ia"], check=True)
+    return json.loads(ia_json.read_text()) if ia_json.exists() else None
 
 
 def compilacao(c: dict, destino: Path, pulados: list) -> dict | None:
     """Sem VOD pública o clipe fica abaixo de 1 min: junta de 2 a 4 clipes do mesmo streamer (cada um com o
     título dele no começo) até passar de MINIMO segundos."""
-    partes, total = [], 0.0
+    partes, total, ia_principal = [], 0.0, None
     for i, x in enumerate([c] + c.get("extras", [])):
         x = {**c, **x}  # extras herdam cam/layout/gx do streamer
         if partes and total + float(x.get("duration") or 30) > 120:  # compilação de no máximo ~2 min
@@ -167,7 +170,9 @@ def compilacao(c: dict, destino: Path, pulados: list) -> dict | None:
             pulados.append({"clip_id": x["clip_id"], "motivo": "so_camera"})
             continue
         seg = Path(f"/tmp/seg_{i}.mp4")
-        renderizar(src, seg, x, titulo(x.get("title", ""), x["streamer"]))
+        ia = renderizar(src, seg, x, titulo(x.get("title", ""), x["streamer"]))
+        if not partes:
+            ia_principal = ia  # o título do post vem do primeiro trecho da compilação
         partes.append((x, seg))
         total += duracao(seg)
         if total >= MINIMO + 5 or len(partes) >= 4:
@@ -179,6 +184,7 @@ def compilacao(c: dict, destino: Path, pulados: list) -> dict | None:
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lista),
                     "-c", "copy", "-movflags", "+faststart", str(destino)], check=True)
     return {**c, "title": f"{c['streamer']} no GTA 6: {len(partes)} momentos", "duration": duracao(destino),
+            "ia": ia_principal,
             "views": sum(int(x.get("views") or 0) for x, _ in partes),
             "compilacao": [x["clip_id"] for x, _ in partes]}
 
@@ -190,6 +196,8 @@ def textos(c: dict, titulo_principal: str) -> dict:
     comp = len(c.get("compilacao") or []) > 1
     generico = titulo_principal.endswith("no GTA 6")
     t = f"{nome} no GTA 6: {len(c['compilacao'])} momentos da live" if comp and generico else titulo_principal
+    if (c.get("ia") or {}).get("titulo"):  # título do Gemini, quando deu certo
+        t = c["ia"]["titulo"]
     tag = re.sub(r"[^a-z0-9]", "", s.lower())
     legenda = (f"{t}\n\n{'Cortes' if comp else 'Corte'} da live do {s} na Twitch (twitch.tv/{s})\n\n"
                f"#gta6 #gtavi #gta #{tag} #cortes")
@@ -220,8 +228,8 @@ def main():
             pulados.append({"clip_id": c["clip_id"], "motivo": "so_camera"})
             continue
         t = titulo(c.get("title", ""), c["streamer"])
-        renderizar(src, out / f"{jid}.mp4", c, t)
-        escolhido = {**c, "title": t, "duration": duracao(out / f"{jid}.mp4")}
+        ia = renderizar(src, out / f"{jid}.mp4", c, t)
+        escolhido = {**c, "title": t, "duration": duracao(out / f"{jid}.mp4"), "ia": ia}
         break
     posts, yt = None, None
     if escolhido:

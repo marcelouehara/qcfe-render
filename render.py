@@ -161,6 +161,7 @@ def main():
     ap.add_argument("--title", default="")
     ap.add_argument("--credit", default="")
     ap.add_argument("--model", default="small")
+    ap.add_argument("--ia", action="store_true", help="título e gancho com Gemini Flash (GEMINI_API_KEY)")
     a = ap.parse_args()
 
     iw, ih, duration = probe(a.src)
@@ -188,6 +189,13 @@ def main():
             gx = int(novo)
 
     words = transcribe(a.src, a.model)
+    if a.ia:  # gancho da IA vira o texto amarelo do começo; título vai para o post (lido pelo corte.py)
+        import titulos
+        ia = titulos.gerar(a.credit, a.title, " ".join(w["text"] for w in words), titulos.quadros(a.src, duration))
+        print("ia:", ia, flush=True)
+        if ia:
+            a.title = ia["gancho"]
+            Path(a.out).with_suffix(".ia.json").write_text(json.dumps(ia, ensure_ascii=False), encoding="utf-8")
     if a.layout == "full":  # sem facecam: gameplay em tela cheia (recorte 9:16)
         fw = int(ih * W / H) // 2 * 2
         fx = int(min(max(a.gx * sx - fw / 2, 0), iw - fw))
