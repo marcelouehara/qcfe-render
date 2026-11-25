@@ -14,16 +14,18 @@ import urllib.parse
 import urllib.request
 
 
-def token() -> str:
-    d = urllib.parse.urlencode({"client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
-                                "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"}).encode()
+def token(pref: str = "YT_") -> str:
+    """pref = prefixo das variáveis do canal: YT_ (QUE CORTE FOI ESSE) ou YT_CONNEXION_ (@ConnexionCortesGTA6)."""
+    d = urllib.parse.urlencode({"client_id": os.environ[pref + "CLIENT_ID"], "client_secret": os.environ[pref + "CLIENT_SECRET"],
+                                "refresh_token": os.environ[pref + "REFRESH_TOKEN"], "grant_type": "refresh_token"}).encode()
     return json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token", d, timeout=60))["access_token"]
 
 
-def upload(video: str, titulo: str, descricao: str, tags: list[str] | None = None, publicar_em: str | None = None) -> dict:
+def upload(video: str, titulo: str, descricao: str, tags: list[str] | None = None, publicar_em: str | None = None,
+           pref: str = "YT_") -> dict:
     """Devolve {"status": "ok", "id", "url"} ou {"status": "erro", "motivo"} (ex.: quotaExceeded)."""
     try:
-        tk = token()
+        tk = token(pref)
         status = {"privacyStatus": "private", "publishAt": publicar_em} if publicar_em else {"privacyStatus": "public"}
         status.update({"selfDeclaredMadeForKids": False, "containsSyntheticMedia": False})
         meta = {"snippet": {"title": titulo[:100], "description": descricao[:4900], "tags": tags or [],

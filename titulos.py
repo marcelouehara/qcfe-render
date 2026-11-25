@@ -18,7 +18,7 @@ FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 # em ordem; o nível grátis às vezes devolve 503 (alta demanda) ou 429 (limite): tenta o próximo
 MODELOS = ["gemini-3.5-flash", "gemini-flash-latest", "gemini-flash-lite-latest"]
 
-PROMPT = """Voce escreve titulos de Shorts/TikTok para o canal brasileiro de cortes de GTA 6 "Que Corte Foi Esse".
+PROMPT = """Voce escreve titulos de Shorts/TikTok para um canal brasileiro de cortes de GTA 6.
 Streamer: {streamer}.
 Titulo que um espectador deu ao clipe na Twitch (pode ser lixo, ignore se nao fizer sentido): {twitch!r}
 Fala do streamer no corte (transcricao automatica, pode ter erros; pode estar vazia):

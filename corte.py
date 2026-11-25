@@ -24,6 +24,10 @@ HERE = Path(__file__).parent
 MODEL = str(HERE / "models" / "face_detection_yunet_2023mar.onnx")
 FACE_LIMIT = 0.12  # rosto mais largo que 12% da tela = câmera em tela cheia
 ALVO, MINIMO, MAXIMO = 75.0, 65.0, 90.0  # duração do corte em segundos (TikTok só monetiza acima de 1 min)
+# Canais: "qcfe" (Que Corte Foi Esse: 65-90 s, YouTube + TikTok + Instagram) e "connexion" (@ConnexionCortesGTA6:
+# Shorts curtos de 20-45 s, só YouTube, teste de formato a partir de 25/11/2026). O n8n manda "canal" no job.
+FORMATOS = {"qcfe": (75.0, 65.0, 90.0), "connexion": (35.0, 20.0, 45.0)}
+YT_PREFIXO = {"qcfe": "YT_", "connexion": "YT_CONNEXION_"}  # secrets do YouTube de cada canal
 
 
 def janela(offset: float, dur: float) -> tuple[float, float]:
@@ -46,6 +50,25 @@ def baixar(c: dict, destino: str) -> str | None:
                         f"https://www.twitch.tv/videos/{c['video_id']}"], capture_output=True, text=True)
     if r.returncode != 0 or not Path(destino).exists():
         return "vod_inscritos" if "subscriber" in r.stderr else "download"
+    return None
+
+
+def baixar_curto(c: dict, destino: str) -> str | None:
+    """Formato curto: usa o próprio clipe (não precisa de VOD, serve até para o cellbit). Clipe abaixo de MINIMO
+    com VOD pública ganha contexto pela VOD; acima de MAXIMO fica só o fim, onde quem clipou marcou o momento."""
+    dur = float(c.get("duration") or 30)
+    if dur < MINIMO and c.get("video_id") and c.get("vod_offset") is not None and not baixar(c, destino):
+        return None
+    r = subprocess.run(["yt-dlp", "-q", "--no-warnings", "-f", "best[height<=1080]", "--force-overwrites",
+                        "-o", destino, c["url"]], capture_output=True, text=True)
+    if r.returncode != 0 or not Path(destino).exists():
+        return "download"
+    real = duracao(destino)
+    if real > MAXIMO:
+        tmp = destino + ".fim.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{real - MAXIMO:.2f}", "-i", destino,
+                        "-c", "copy", tmp], check=True)
+        os.replace(tmp, destino)
     return None
 
 
@@ -207,14 +230,22 @@ def textos(c: dict, titulo_principal: str) -> dict:
 
 
 def main():
+    global ALVO, MINIMO, MAXIMO
     job = json.loads(os.environ["JOB"])
     jid = job["id"]
+    canal = job.get("canal", "qcfe")
+    ALVO, MINIMO, MAXIMO = FORMATOS[canal]
+    curto = canal == "connexion"
+    print("canal:", canal, f"({MINIMO:.0f}-{MAXIMO:.0f} s)", flush=True)
     out = HERE / "out"
     out.mkdir(exist_ok=True)
     pulados, escolhido = [], None
     for c in job["candidatos"]:
         src = f"/tmp/clip_{c['clip_id'][:40]}.mp4"
-        erro = baixar(c, src)
+        erro = baixar_curto(c, src) if curto else baixar(c, src)
+        if erro and curto:
+            pulados.append({"clip_id": c["clip_id"], "motivo": erro})
+            continue
         if erro:
             print(c["clip_id"], c["streamer"], "->", erro, "-> tentando compilacao", flush=True)
             escolhido = compilacao(c, out / f"{jid}.mp4", pulados)
@@ -237,12 +268,13 @@ def main():
         cand = next(c for c in job["candidatos"] if c["clip_id"] == escolhido["clip_id"])
         posts = textos(escolhido, titulo(cand.get("title", ""), escolhido["streamer"]))
         # YouTube pela API (cota ~6 uploads/dia); se falhar (ex.: quotaExceeded) o n8n manda pelo Buffer
-        if not job.get("teste") and job.get("youtube_api", True) and os.environ.get("YT_REFRESH_TOKEN"):
+        pref = YT_PREFIXO[canal]
+        if not job.get("teste") and job.get("youtube_api", True) and os.environ.get(pref + "REFRESH_TOKEN"):
             import youtube
             yt = youtube.upload(str(out / f"{jid}.mp4"), posts["titulo_yt"], posts["descricao_yt"], posts["tags"],
-                                job.get("publicar_em"))
+                                job.get("publicar_em"), pref)
             print("youtube:", yt, flush=True)
-    res = {"id": jid, "status": "ok" if escolhido else "sem_corte", "teste": job.get("teste", False),
+    res = {"id": jid, "canal": canal, "status": "ok" if escolhido else "sem_corte", "teste": job.get("teste", False),
            "clip": escolhido, "posts": posts, "youtube": yt, "pulados": pulados}
     (out / f"{jid}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
     # descartes definitivos não voltam como candidato (sem_vod pode ser VOD ainda processando: tenta de novo)
