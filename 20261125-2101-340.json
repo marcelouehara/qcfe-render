@@ -1,0 +1,44 @@
+{
+ "id": "20261125-2101-340",
+ "canal": "connexion",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "",
+  "clip_id": "TangibleBlightedTarsierNerfRedBlaster-IIvLH16APyuuCnfc",
+  "duration": 22.666667,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "alanzoka",
+  "title": "Alô xracing",
+  "url": "https://www.twitch.tv/alanzoka/clip/TangibleBlightedTarsierNerfRedBlaster-IIvLH16APyuuCnfc",
+  "video_id": "2940381916",
+  "views": 170,
+  "vod_offset": 1718,
+  "ia": {
+   "titulo": "Alanzoka diz que é impossível buscarem ele de moto",
+   "gancho": "IMPOSSÍVEL PEGAREM ELE?",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "Alanzoka diz que é impossível buscarem ele de moto",
+  "legenda": "Alanzoka diz que é impossível buscarem ele de moto\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes",
+  "titulo_yt": "Alanzoka diz que é impossível buscarem ele de moto | Alanzoka GTA 6",
+  "descricao_yt": "Alanzoka diz que é impossível buscarem ele de moto\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "alanzoka"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "UPKTQmptUm4",
+  "url": "https://www.youtube.com/shorts/UPKTQmptUm4",
+  "publicar_em": null
+ },
+ "pulados": []
+}

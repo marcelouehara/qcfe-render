@@ -1,0 +1,44 @@
+{
+ "id": "20261125-2000-339",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "0,124,500,276",
+  "clip_id": "SeductiveSingleWombatBudBlast-bW54d5MngfswBPRU",
+  "duration": 75.016,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "xarola_",
+  "title": "EU TO IMPRESSIONADO COM A BEA345133NGA",
+  "url": "https://www.twitch.tv/xarola_/clip/SeductiveSingleWombatBudBlast-bW54d5MngfswBPRU",
+  "video_id": "2939631513",
+  "views": 158,
+  "vod_offset": 24647,
+  "ia": {
+   "titulo": "xarola_ se impressiona com o mapa e perde o lugar",
+   "gancho": "OLHA ISSO NO MAPA",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "xarola_ se impressiona com o mapa e perde o lugar",
+  "legenda": "xarola_ se impressiona com o mapa e perde o lugar\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes",
+  "titulo_yt": "xarola_ se impressiona com o mapa e perde o lugar | Xarola_ GTA 6",
+  "descricao_yt": "xarola_ se impressiona com o mapa e perde o lugar\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "xarola_"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "qpZ3NKiCZVc",
+  "url": "https://www.youtube.com/shorts/qpZ3NKiCZVc",
+  "publicar_em": null
+ },
+ "pulados": []
+}

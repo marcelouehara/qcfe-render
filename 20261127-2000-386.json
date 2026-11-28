@@ -1,0 +1,44 @@
+{
+ "id": "20261127-2000-386",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "",
+  "clip_id": "ThankfulToughSalamanderAMPTropPunch-dmzn-N49WsnMgCGu",
+  "duration": 76.015,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "alanzoka",
+  "title": "local o ovini",
+  "url": "https://www.twitch.tv/alanzoka/clip/ThankfulToughSalamanderAMPTropPunch-dmzn-N49WsnMgCGu",
+  "video_id": "2941507793",
+  "views": 561,
+  "vod_offset": 12320,
+  "ia": {
+   "titulo": "Alanzoka tenta descobrir qual é esse lugar",
+   "gancho": "QUE LUGAR É ESSE",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "Alanzoka tenta descobrir qual é esse lugar",
+  "legenda": "Alanzoka tenta descobrir qual é esse lugar\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes",
+  "titulo_yt": "Alanzoka tenta descobrir qual é esse lugar | Alanzoka GTA 6",
+  "descricao_yt": "Alanzoka tenta descobrir qual é esse lugar\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "alanzoka"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "C3JqXWqLa3k",
+  "url": "https://www.youtube.com/shorts/C3JqXWqLa3k",
+  "publicar_em": null
+ },
+ "pulados": []
+}

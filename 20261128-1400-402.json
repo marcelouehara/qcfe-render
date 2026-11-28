@@ -1,0 +1,44 @@
+{
+ "id": "20261128-1400-402",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "",
+  "clip_id": "SneakySpicyFriseeMrDestructoid-NMhdykqeGjb7U-w0",
+  "duration": 76.0,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "alanzoka",
+  "title": "Se fica esperto",
+  "url": "https://www.twitch.tv/alanzoka/clip/SneakySpicyFriseeMrDestructoid-NMhdykqeGjb7U-w0",
+  "video_id": "2942407120",
+  "views": 680,
+  "vod_offset": 13740,
+  "ia": {
+   "titulo": "alanzoka ri quando ouve que ele não vai fazer falta",
+   "gancho": "ELE NÃO VAI FAZER FALTA",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "alanzoka ri quando ouve que ele não vai fazer falta",
+  "legenda": "alanzoka ri quando ouve que ele não vai fazer falta\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes",
+  "titulo_yt": "alanzoka ri quando ouve que ele não vai fazer falta | Alanzoka GTA 6",
+  "descricao_yt": "alanzoka ri quando ouve que ele não vai fazer falta\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "alanzoka"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "mWIqVPhF5b0",
+  "url": "https://www.youtube.com/shorts/mWIqVPhF5b0",
+  "publicar_em": null
+ },
+ "pulados": []
+}

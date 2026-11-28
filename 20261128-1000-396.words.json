@@ -1,0 +1,782 @@
+[
+ {
+  "start": 0.0,
+  "end": 0.04,
+  "text": "por"
+ },
+ {
+  "start": 0.04,
+  "end": 0.3,
+  "text": "favor"
+ },
+ {
+  "start": 2.18,
+  "end": 2.54,
+  "text": "Ele"
+ },
+ {
+  "start": 2.54,
+  "end": 2.9,
+  "text": "senta"
+ },
+ {
+  "start": 2.9,
+  "end": 2.96,
+  "text": "em"
+ },
+ {
+  "start": 2.96,
+  "end": 3.12,
+  "text": "três,"
+ },
+ {
+  "start": 3.24,
+  "end": 3.5,
+  "text": "seis,"
+ },
+ {
+  "start": 3.58,
+  "end": 3.84,
+  "text": "três"
+ },
+ {
+  "start": 3.84,
+  "end": 4.2,
+  "text": "O"
+ },
+ {
+  "start": 4.2,
+  "end": 4.34,
+  "text": "que"
+ },
+ {
+  "start": 5.62,
+  "end": 5.62,
+  "text": "é"
+ },
+ {
+  "start": 5.62,
+  "end": 5.74,
+  "text": "que"
+ },
+ {
+  "start": 5.74,
+  "end": 5.84,
+  "text": "eu"
+ },
+ {
+  "start": 5.84,
+  "end": 6.02,
+  "text": "começo"
+ },
+ {
+  "start": 6.02,
+  "end": 6.2,
+  "text": "com"
+ },
+ {
+  "start": 6.2,
+  "end": 6.2,
+  "text": "as"
+ },
+ {
+  "start": 6.2,
+  "end": 6.24,
+  "text": "pães"
+ },
+ {
+  "start": 6.24,
+  "end": 6.48,
+  "text": "duradas"
+ },
+ {
+  "start": 6.48,
+  "end": 6.66,
+  "text": "de"
+ },
+ {
+  "start": 6.66,
+  "end": 6.92,
+  "text": "lado"
+ },
+ {
+  "start": 6.92,
+  "end": 7.26,
+  "text": "ou"
+ },
+ {
+  "start": 7.26,
+  "end": 7.38,
+  "text": "todas"
+ },
+ {
+  "start": 7.38,
+  "end": 7.52,
+  "text": "as"
+ },
+ {
+  "start": 7.52,
+  "end": 7.9,
+  "text": "caradas?"
+ },
+ {
+  "start": 10.96,
+  "end": 10.98,
+  "text": "Eu"
+ },
+ {
+  "start": 10.98,
+  "end": 11.32,
+  "text": "devia"
+ },
+ {
+  "start": 11.32,
+  "end": 11.74,
+  "text": "trocar"
+ },
+ {
+  "start": 11.74,
+  "end": 11.9,
+  "text": "o"
+ },
+ {
+  "start": 11.9,
+  "end": 12.48,
+  "text": "Vizéries"
+ },
+ {
+  "start": 12.48,
+  "end": 14.16,
+  "text": "por"
+ },
+ {
+  "start": 14.16,
+  "end": 14.62,
+  "text": "uma"
+ },
+ {
+  "start": 14.62,
+  "end": 14.94,
+  "text": "carinha"
+ },
+ {
+  "start": 14.94,
+  "end": 15.06,
+  "text": "de"
+ },
+ {
+  "start": 15.06,
+  "end": 15.16,
+  "text": "todo"
+ },
+ {
+  "start": 15.16,
+  "end": 15.34,
+  "text": "tipo"
+ },
+ {
+  "start": 15.34,
+  "end": 15.56,
+  "text": "de"
+ },
+ {
+  "start": 15.56,
+  "end": 15.64,
+  "text": "respeito"
+ },
+ {
+  "start": 15.64,
+  "end": 15.72,
+  "text": "e"
+ },
+ {
+  "start": 15.72,
+  "end": 15.86,
+  "text": "igual"
+ },
+ {
+  "start": 17.2,
+  "end": 17.56,
+  "text": "Aiii"
+ },
+ {
+  "start": 17.56,
+  "end": 17.9,
+  "text": "Vazíamos"
+ },
+ {
+  "start": 17.9,
+  "end": 18.04,
+  "text": "um"
+ },
+ {
+  "start": 18.04,
+  "end": 18.52,
+  "text": "negócio"
+ },
+ {
+  "start": 20.79,
+  "end": 22.15,
+  "text": "com"
+ },
+ {
+  "start": 22.15,
+  "end": 22.31,
+  "text": "a"
+ },
+ {
+  "start": 22.31,
+  "end": 22.51,
+  "text": "Rita,"
+ },
+ {
+  "start": 22.69,
+  "end": 23.19,
+  "text": "trocávamos"
+ },
+ {
+  "start": 23.19,
+  "end": 23.35,
+  "text": "o"
+ },
+ {
+  "start": 23.35,
+  "end": 23.77,
+  "text": "Vizéries"
+ },
+ {
+  "start": 23.77,
+  "end": 23.91,
+  "text": "e"
+ },
+ {
+  "start": 23.91,
+  "end": 24.03,
+  "text": "ele"
+ },
+ {
+  "start": 24.03,
+  "end": 24.35,
+  "text": "arranjava"
+ },
+ {
+  "start": 24.35,
+  "end": 24.53,
+  "text": "-nos"
+ },
+ {
+  "start": 24.53,
+  "end": 24.67,
+  "text": "uma"
+ },
+ {
+  "start": 24.67,
+  "end": 24.99,
+  "text": "carinha"
+ },
+ {
+  "start": 24.99,
+  "end": 25.23,
+  "text": "dessa"
+ },
+ {
+  "start": 25.23,
+  "end": 25.45,
+  "text": "para"
+ },
+ {
+  "start": 25.45,
+  "end": 25.67,
+  "text": "deixar"
+ },
+ {
+  "start": 25.67,
+  "end": 26.63,
+  "text": "-se"
+ },
+ {
+  "start": 26.63,
+  "end": 26.63,
+  "text": "de"
+ },
+ {
+  "start": 26.63,
+  "end": 26.71,
+  "text": "ser"
+ },
+ {
+  "start": 26.71,
+  "end": 26.99,
+  "text": "ligado"
+ },
+ {
+  "start": 26.99,
+  "end": 27.71,
+  "text": "Olha,"
+ },
+ {
+  "start": 27.85,
+  "end": 27.89,
+  "text": "vou"
+ },
+ {
+  "start": 27.89,
+  "end": 27.99,
+  "text": "dizer"
+ },
+ {
+  "start": 27.99,
+  "end": 28.61,
+  "text": "sincero,"
+ },
+ {
+  "start": 28.69,
+  "end": 28.73,
+  "text": "eu"
+ },
+ {
+  "start": 28.73,
+  "end": 28.91,
+  "text": "gostei"
+ },
+ {
+  "start": 28.91,
+  "end": 29.07,
+  "text": "muito"
+ },
+ {
+  "start": 29.07,
+  "end": 29.25,
+  "text": "da"
+ },
+ {
+  "start": 29.25,
+  "end": 29.51,
+  "text": "carinha"
+ },
+ {
+  "start": 29.51,
+  "end": 29.67,
+  "text": "do"
+ },
+ {
+  "start": 29.67,
+  "end": 30.03,
+  "text": "Tommy"
+ },
+ {
+  "start": 30.03,
+  "end": 30.35,
+  "text": "Pena"
+ },
+ {
+  "start": 30.35,
+  "end": 30.49,
+  "text": "é"
+ },
+ {
+  "start": 30.49,
+  "end": 30.49,
+  "text": "que"
+ },
+ {
+  "start": 30.49,
+  "end": 30.57,
+  "text": "só"
+ },
+ {
+  "start": 30.57,
+  "end": 30.69,
+  "text": "dá"
+ },
+ {
+  "start": 30.69,
+  "end": 30.87,
+  "text": "para"
+ },
+ {
+  "start": 30.87,
+  "end": 30.99,
+  "text": "as"
+ },
+ {
+  "start": 30.99,
+  "end": 31.29,
+  "text": "pessoas,"
+ },
+ {
+  "start": 31.39,
+  "end": 31.69,
+  "text": "mano,"
+ },
+ {
+  "start": 31.75,
+  "end": 31.93,
+  "text": "mas"
+ },
+ {
+  "start": 31.93,
+  "end": 32.05,
+  "text": "ter"
+ },
+ {
+  "start": 32.05,
+  "end": 32.19,
+  "text": "o"
+ },
+ {
+  "start": 32.19,
+  "end": 32.75,
+  "text": "vidro"
+ },
+ {
+  "start": 32.75,
+  "end": 33.31,
+  "text": "todo..."
+ },
+ {
+  "start": 37.88,
+  "end": 38.12,
+  "text": "Que"
+ },
+ {
+  "start": 38.12,
+  "end": 38.48,
+  "text": "balde"
+ },
+ {
+  "start": 38.48,
+  "end": 38.58,
+  "text": "que"
+ },
+ {
+  "start": 38.58,
+  "end": 38.66,
+  "text": "eu"
+ },
+ {
+  "start": 38.66,
+  "end": 38.78,
+  "text": "vou"
+ },
+ {
+  "start": 38.78,
+  "end": 39.04,
+  "text": "pagar"
+ },
+ {
+  "start": 42.04,
+  "end": 42.52,
+  "text": "Já"
+ },
+ {
+  "start": 42.52,
+  "end": 42.7,
+  "text": "nem"
+ },
+ {
+  "start": 42.7,
+  "end": 42.84,
+  "text": "sei"
+ },
+ {
+  "start": 42.84,
+  "end": 43.14,
+  "text": "dele"
+ },
+ {
+  "start": 43.14,
+  "end": 43.88,
+  "text": "Não"
+ },
+ {
+  "start": 43.88,
+  "end": 46.14,
+  "text": "dá"
+ },
+ {
+  "start": 46.14,
+  "end": 46.24,
+  "text": "para"
+ },
+ {
+  "start": 46.24,
+  "end": 46.48,
+  "text": "fazer"
+ },
+ {
+  "start": 46.48,
+  "end": 46.7,
+  "text": "load"
+ },
+ {
+  "start": 46.7,
+  "end": 46.98,
+  "text": "game,"
+ },
+ {
+  "start": 46.98,
+  "end": 47.22,
+  "text": "mano"
+ },
+ {
+  "start": 48.12,
+  "end": 48.6,
+  "text": "Ai,"
+ },
+ {
+  "start": 48.74,
+  "end": 48.96,
+  "text": "minha"
+ },
+ {
+  "start": 48.96,
+  "end": 49.3,
+  "text": "nossa"
+ },
+ {
+  "start": 49.3,
+  "end": 49.9,
+  "text": "senhora"
+ },
+ {
+  "start": 49.9,
+  "end": 50.16,
+  "text": "Não"
+ },
+ {
+  "start": 50.16,
+  "end": 51.42,
+  "text": "acredito"
+ },
+ {
+  "start": 51.42,
+  "end": 52.22,
+  "text": "O"
+ },
+ {
+  "start": 52.22,
+  "end": 53.04,
+  "text": "Forgeatir"
+ },
+ {
+  "start": 53.04,
+  "end": 53.28,
+  "text": "virou"
+ },
+ {
+  "start": 53.28,
+  "end": 53.7,
+  "text": "titan"
+ },
+ {
+  "start": 53.7,
+  "end": 54.08,
+  "text": "Tá"
+ },
+ {
+  "start": 54.08,
+  "end": 54.32,
+  "text": "jogando"
+ },
+ {
+  "start": 54.32,
+  "end": 54.42,
+  "text": "a"
+ },
+ {
+  "start": 54.42,
+  "end": 54.7,
+  "text": "bintão"
+ },
+ {
+  "start": 55.46,
+  "end": 55.94,
+  "text": "É"
+ },
+ {
+  "start": 55.94,
+  "end": 56.26,
+  "text": "pá,"
+ },
+ {
+  "start": 56.36,
+  "end": 56.7,
+  "text": "cagando"
+ },
+ {
+  "start": 56.7,
+  "end": 56.9,
+  "text": "da"
+ },
+ {
+  "start": 56.9,
+  "end": 57.3,
+  "text": "merda"
+ },
+ {
+  "start": 58.1,
+  "end": 58.58,
+  "text": "Olha,"
+ },
+ {
+  "start": 59.3,
+  "end": 59.38,
+  "text": "se"
+ },
+ {
+  "start": 59.38,
+  "end": 59.52,
+  "text": "tivesse"
+ },
+ {
+  "start": 59.52,
+  "end": 59.78,
+  "text": "aqui"
+ },
+ {
+  "start": 59.78,
+  "end": 59.98,
+  "text": "uma"
+ },
+ {
+  "start": 59.98,
+  "end": 60.2,
+  "text": "cara,"
+ },
+ {
+  "start": 60.24,
+  "end": 60.3,
+  "text": "não"
+ },
+ {
+  "start": 60.3,
+  "end": 60.5,
+  "text": "podes"
+ },
+ {
+  "start": 60.5,
+  "end": 60.84,
+  "text": "querer..."
+ },
+ {
+  "start": 61.9,
+  "end": 62.38,
+  "text": "Podes"
+ },
+ {
+  "start": 62.38,
+  "end": 62.7,
+  "text": "querer"
+ },
+ {
+  "start": 62.7,
+  "end": 63.14,
+  "text": "que"
+ },
+ {
+  "start": 63.14,
+  "end": 63.28,
+  "text": "era"
+ },
+ {
+  "start": 63.28,
+  "end": 63.36,
+  "text": "o"
+ },
+ {
+  "start": 63.36,
+  "end": 63.42,
+  "text": "que"
+ },
+ {
+  "start": 63.42,
+  "end": 63.5,
+  "text": "eu"
+ },
+ {
+  "start": 63.5,
+  "end": 64.0,
+  "text": "fazia"
+ },
+ {
+  "start": 64.0,
+  "end": 64.92,
+  "text": "Tá"
+ },
+ {
+  "start": 64.92,
+  "end": 65.14,
+  "text": "lá"
+ },
+ {
+  "start": 66.9,
+  "end": 67.62,
+  "text": "Se"
+ },
+ {
+  "start": 67.62,
+  "end": 67.88,
+  "text": "tivesse"
+ },
+ {
+  "start": 67.88,
+  "end": 68.08,
+  "text": "aqui"
+ },
+ {
+  "start": 68.08,
+  "end": 68.3,
+  "text": "uma"
+ },
+ {
+  "start": 68.3,
+  "end": 68.48,
+  "text": "cara,"
+ },
+ {
+  "start": 68.54,
+  "end": 68.66,
+  "text": "era"
+ },
+ {
+  "start": 68.66,
+  "end": 68.76,
+  "text": "o"
+ },
+ {
+  "start": 68.76,
+  "end": 68.86,
+  "text": "que"
+ },
+ {
+  "start": 68.86,
+  "end": 68.96,
+  "text": "eu"
+ },
+ {
+  "start": 68.96,
+  "end": 69.16,
+  "text": "faria"
+ },
+ {
+  "start": 69.16,
+  "end": 69.16,
+  "text": "O"
+ },
+ {
+  "start": 69.16,
+  "end": 69.16,
+  "text": "que"
+ },
+ {
+  "start": 69.16,
+  "end": 69.26,
+  "text": "era"
+ },
+ {
+  "start": 69.26,
+  "end": 69.5,
+  "text": "agora?"
+ }
+]

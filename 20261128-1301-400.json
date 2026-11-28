@@ -1,0 +1,44 @@
+{
+ "id": "20261128-1301-400",
+ "canal": "connexion",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1392,168,528,304",
+  "clip_id": "SillySuperMonitorPeanutButterJellyTime-Y4hW09PstV7jhy-p",
+  "duration": 30.0,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "cellbit",
+  "title": "ó o raio",
+  "url": "https://www.twitch.tv/cellbit/clip/SillySuperMonitorPeanutButterJellyTime-Y4hW09PstV7jhy-p",
+  "video_id": "2942523759",
+  "views": 223,
+  "vod_offset": 31908,
+  "ia": {
+   "titulo": "Cellbit se surpreende com raio gigante no GTA 6",
+   "gancho": "OLHA ESSE RAIO",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "Cellbit se surpreende com raio gigante no GTA 6",
+  "legenda": "Cellbit se surpreende com raio gigante no GTA 6\n\nCorte da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes",
+  "titulo_yt": "Cellbit se surpreende com raio gigante no GTA 6",
+  "descricao_yt": "Cellbit se surpreende com raio gigante no GTA 6\n\nCorte da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "cellbit"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "DIXZFygT0sQ",
+  "url": "https://www.youtube.com/shorts/DIXZFygT0sQ",
+  "publicar_em": null
+ },
+ "pulados": []
+}

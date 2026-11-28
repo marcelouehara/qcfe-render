@@ -1,0 +1,44 @@
+{
+ "id": "20261126-2000-363",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1594,414,306,256",
+  "clip_id": "CloudyHealthySpiderWoofer-x6Fv_OoLaIaiFLAY",
+  "duration": 74.016,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "move_mind",
+  "title": "GTAVI EP 7 EASTER EGGGGS CARROS E LOCAIS OMG - GTA RP HOJE COM CARROS NOVOS",
+  "url": "https://www.twitch.tv/move_mind/clip/CloudyHealthySpiderWoofer-x6Fv_OoLaIaiFLAY",
+  "video_id": "2941544938",
+  "views": 218,
+  "vod_offset": 1515,
+  "ia": {
+   "titulo": "move_mind jogando GTA 6 e mostrando os menus",
+   "gancho": "OLHA ISSO NO JOGO",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "move_mind jogando GTA 6 e mostrando os menus",
+  "legenda": "move_mind jogando GTA 6 e mostrando os menus\n\nCorte da live do move_mind na Twitch (twitch.tv/move_mind)\n\n#gta6 #gtavi #gta #movemind #cortes",
+  "titulo_yt": "move_mind jogando GTA 6 e mostrando os menus",
+  "descricao_yt": "move_mind jogando GTA 6 e mostrando os menus\n\nCorte da live do move_mind na Twitch (twitch.tv/move_mind)\n\n#gta6 #gtavi #gta #movemind #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "move_mind"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "ngV6PYwhGGk",
+  "url": "https://www.youtube.com/shorts/ngV6PYwhGGk",
+  "publicar_em": null
+ },
+ "pulados": []
+}

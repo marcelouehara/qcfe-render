@@ -1,0 +1,49 @@
+{
+ "id": "20261123-2000-298",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1520,440,396,224",
+  "clip_id": "SassyRenownedScorpionKappaRoss-xwKxfwOtc5ZNRIMM",
+  "duration": 95.619661,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "tioorochitwitch",
+  "title": "tioorochitwitch no GTA 6: 4 momentos",
+  "url": "https://www.twitch.tv/tioorochitwitch/clip/SassyRenownedScorpionKappaRoss-xwKxfwOtc5ZNRIMM",
+  "video_id": null,
+  "views": 124,
+  "vod_offset": null,
+  "ia": {
+   "titulo": "tioorochitwitch encontra os códigos no mapa",
+   "gancho": "CÓDIGOS SECRETOS NO MAPA",
+   "modelo": "gemini-3.5-flash"
+  },
+  "compilacao": [
+   "SassyRenownedScorpionKappaRoss-xwKxfwOtc5ZNRIMM",
+   "GoldenMotionlessShrimpPanicBasket-C1RlGgjzB0hvGwig",
+   "DarkBumblingShingleRlyTho--vtIoYSZrNJ4ledw",
+   "ObliviousOnerousMomHotPokket-7k-ahdNL4tdxL28p"
+  ]
+ },
+ "posts": {
+  "titulo": "tioorochitwitch encontra os códigos no mapa",
+  "legenda": "tioorochitwitch encontra os códigos no mapa\n\nCortes da live do tioorochitwitch na Twitch (twitch.tv/tioorochitwitch)\n\n#gta6 #gtavi #gta #tioorochitwitch #cortes",
+  "titulo_yt": "tioorochitwitch encontra os códigos no mapa | Tioorochitwitch GTA 6",
+  "descricao_yt": "tioorochitwitch encontra os códigos no mapa\n\nCortes da live do tioorochitwitch na Twitch (twitch.tv/tioorochitwitch)\n\n#gta6 #gtavi #gta #tioorochitwitch #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "tioorochitwitch"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "EIvHDQ-GPJQ",
+  "url": "https://www.youtube.com/shorts/EIvHDQ-GPJQ",
+  "publicar_em": null
+ },
+ "pulados": []
+}

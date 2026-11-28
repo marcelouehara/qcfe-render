@@ -1,0 +1,43 @@
+{
+ "id": "20261124-1400-312",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "0,124,500,276",
+  "clip_id": "IcyIntelligentPandaJKanStyle-zCjkYEUeF4dP46Jg",
+  "duration": 76.0,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "xarola_",
+  "title": "LINDA",
+  "url": "https://www.twitch.tv/xarola_/clip/IcyIntelligentPandaJKanStyle-zCjkYEUeF4dP46Jg",
+  "video_id": "2938726832",
+  "views": 129,
+  "vod_offset": 24020,
+  "ia": {
+   "titulo": "xarola_ reage a cena tensa e confusa do jogo",
+   "gancho": "OLHA ISSO NO JOGO",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "xarola_ reage a cena tensa e confusa do jogo",
+  "legenda": "xarola_ reage a cena tensa e confusa do jogo\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes",
+  "titulo_yt": "xarola_ reage a cena tensa e confusa do jogo | Xarola_ GTA 6",
+  "descricao_yt": "xarola_ reage a cena tensa e confusa do jogo\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "xarola_"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "z7bz5-TUGl8",
+  "url": "https://www.youtube.com/shorts/z7bz5-TUGl8",
+  "publicar_em": null
+ },
+ "pulados": []
+}

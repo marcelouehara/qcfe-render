@@ -1,0 +1,48 @@
+{
+ "id": "20261124-1600-314",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1392,168,528,304",
+  "clip_id": "VastMushyMarjoramFunRun-DJPYEm5MqlTyW_E3",
+  "duration": 113.688333,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "cellbit",
+  "title": "cellbit no GTA 6: 3 momentos",
+  "url": "https://www.twitch.tv/cellbit/clip/VastMushyMarjoramFunRun-DJPYEm5MqlTyW_E3",
+  "video_id": "2938687639",
+  "views": 212,
+  "vod_offset": 3440,
+  "ia": {
+   "titulo": "Cellbit finalmente encontra um tênis bonito no GTA",
+   "gancho": "PROCURANDO O TÊNIS PERFEITO",
+   "modelo": "gemini-3.5-flash"
+  },
+  "compilacao": [
+   "VastMushyMarjoramFunRun-DJPYEm5MqlTyW_E3",
+   "MoistHumbleCarabeefPrimeMe-jdN5DwYQVMsUpYuC",
+   "MildHelplessCormorantDatBoi-CPQSCHueS1toKyc3"
+  ]
+ },
+ "posts": {
+  "titulo": "Cellbit finalmente encontra um tênis bonito no GTA",
+  "legenda": "Cellbit finalmente encontra um tênis bonito no GTA\n\nCortes da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes",
+  "titulo_yt": "Cellbit finalmente encontra um tênis bonito no GTA",
+  "descricao_yt": "Cellbit finalmente encontra um tênis bonito no GTA\n\nCortes da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "cellbit"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "EiPiVRrXLog",
+  "url": "https://www.youtube.com/shorts/EiPiVRrXLog",
+  "publicar_em": null
+ },
+ "pulados": []
+}

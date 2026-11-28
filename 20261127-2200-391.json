@@ -1,0 +1,50 @@
+{
+ "id": "20261127-2200-391",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1392,168,528,304",
+  "clip_id": "BadSlickCucumberRickroll-6yVJg6d5W401arrv",
+  "duration": 119.125,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "cellbit",
+  "title": "cellbit no GTA 6: 4 momentos",
+  "url": "https://www.twitch.tv/cellbit/clip/BadSlickCucumberRickroll-6yVJg6d5W401arrv",
+  "video_id": "2942523759",
+  "views": 326,
+  "vod_offset": 10409,
+  "ia": {
+   "titulo": "Cellbit vê tudo desmoronar no jogo",
+   "gancho": "TUDO DESMORONOU",
+   "modelo": "gemini-3.5-flash"
+  },
+  "compilacao": [
+   "BadSlickCucumberRickroll-6yVJg6d5W401arrv",
+   "FuriousCalmBoarTwitchRPG-lbHWGcqwbjwHNTsu",
+   "AwkwardMistyReindeerAsianGlow-oT20CxpumtepGLLn",
+   "CalmSpineyCaribouKAPOW-9jTPnQJjyUlzPbc6"
+  ]
+ },
+ "posts": {
+  "titulo": "Cellbit vê tudo desmoronar no jogo",
+  "legenda": "Cellbit vê tudo desmoronar no jogo\n\nCortes da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes",
+  "titulo_yt": "Cellbit vê tudo desmoronar no jogo | Cellbit GTA 6",
+  "descricao_yt": "Cellbit vê tudo desmoronar no jogo\n\nCortes da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "cellbit"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "50xN3OByZzs",
+  "url": "https://www.youtube.com/shorts/50xN3OByZzs",
+  "publicar_em": null
+ },
+ "pulados": []
+}

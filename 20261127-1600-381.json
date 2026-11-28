@@ -1,0 +1,44 @@
+{
+ "id": "20261127-1600-381",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1428,120,460,256",
+  "clip_id": "OriginalDaintyCocoaBIRB-9XLMFRUsyWoeSWgm",
+  "duration": 76.066667,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "hayashii",
+  "title": "Ele conseguiu afundar o carro",
+  "url": "https://www.twitch.tv/hayashii/clip/OriginalDaintyCocoaBIRB-9XLMFRUsyWoeSWgm",
+  "video_id": "2941818234",
+  "views": 134,
+  "vod_offset": 9237,
+  "ia": {
+   "titulo": "Hayashii acabou afundando o carro na água",
+   "gancho": "ELE PERDEU O CARRO?",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "Hayashii acabou afundando o carro na água",
+  "legenda": "Hayashii acabou afundando o carro na água\n\nCorte da live do hayashii na Twitch (twitch.tv/hayashii)\n\n#gta6 #gtavi #gta #hayashii #cortes",
+  "titulo_yt": "Hayashii acabou afundando o carro na água | Hayashii GTA 6",
+  "descricao_yt": "Hayashii acabou afundando o carro na água\n\nCorte da live do hayashii na Twitch (twitch.tv/hayashii)\n\n#gta6 #gtavi #gta #hayashii #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "hayashii"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "ZZAsn3PhRn0",
+  "url": "https://www.youtube.com/shorts/ZZAsn3PhRn0",
+  "publicar_em": null
+ },
+ "pulados": []
+}

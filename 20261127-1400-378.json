@@ -1,0 +1,48 @@
+{
+ "id": "20261127-1400-378",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "0,592,444,252",
+  "clip_id": "CogentViscousPassionfruitShazBotstix-N9ph-gTBn1mYGp46",
+  "duration": 82.63138,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "facada",
+  "title": "facada no GTA 6: 2 momentos",
+  "url": "https://www.twitch.tv/facada/clip/CogentViscousPassionfruitShazBotstix-N9ph-gTBn1mYGp46",
+  "video_id": null,
+  "views": 270,
+  "vod_offset": null,
+  "ia": {
+   "titulo": "O facada anda de patinete no GTA 6 e foge da policia",
+   "gancho": "FUGA DE PATINETE",
+   "modelo": "gemini-flash-lite-latest"
+  },
+  "compilacao": [
+   "CogentViscousPassionfruitShazBotstix-N9ph-gTBn1mYGp46",
+   "MoistHonestBananaFloof-WdGPhZK1mN57DAfZ"
+  ]
+ },
+ "posts": {
+  "titulo": "O facada anda de patinete no GTA 6 e foge da policia",
+  "legenda": "O facada anda de patinete no GTA 6 e foge da policia\n\nCortes da live do facada na Twitch (twitch.tv/facada)\n\n#gta6 #gtavi #gta #facada #cortes",
+  "titulo_yt": "O facada anda de patinete no GTA 6 e foge da policia",
+  "descricao_yt": "O facada anda de patinete no GTA 6 e foge da policia\n\nCortes da live do facada na Twitch (twitch.tv/facada)\n\n#gta6 #gtavi #gta #facada #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "facada"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "x0s4twPvpeY",
+  "url": "https://www.youtube.com/shorts/x0s4twPvpeY",
+  "publicar_em": null
+ },
+ "pulados": []
+}

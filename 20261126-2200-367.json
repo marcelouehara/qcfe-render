@@ -1,0 +1,44 @@
+{
+ "id": "20261126-2200-367",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1428,120,460,256",
+  "clip_id": "TsundereGrotesqueGarageBudStar-r7gFsR9ZxRz_q1mW",
+  "duration": 75.082,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "hayashii",
+  "title": "O carro esta INUTILIZAVEL",
+  "url": "https://www.twitch.tv/hayashii/clip/TsundereGrotesqueGarageBudStar-r7gFsR9ZxRz_q1mW",
+  "video_id": "2940856852",
+  "views": 87,
+  "vod_offset": 10377,
+  "ia": {
+   "titulo": "Hayashii tenta dirigir com o carro danificado",
+   "gancho": "SERÁ QUE ELE CHEGA",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "Hayashii tenta dirigir com o carro danificado",
+  "legenda": "Hayashii tenta dirigir com o carro danificado\n\nCorte da live do hayashii na Twitch (twitch.tv/hayashii)\n\n#gta6 #gtavi #gta #hayashii #cortes",
+  "titulo_yt": "Hayashii tenta dirigir com o carro danificado | Hayashii GTA 6",
+  "descricao_yt": "Hayashii tenta dirigir com o carro danificado\n\nCorte da live do hayashii na Twitch (twitch.tv/hayashii)\n\n#gta6 #gtavi #gta #hayashii #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "hayashii"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "Sh6PuAc9Qrc",
+  "url": "https://www.youtube.com/shorts/Sh6PuAc9Qrc",
+  "publicar_em": null
+ },
+ "pulados": []
+}

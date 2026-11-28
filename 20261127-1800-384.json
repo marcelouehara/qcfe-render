@@ -1,0 +1,44 @@
+{
+ "id": "20261127-1800-384",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "",
+  "clip_id": "AssiduousDifficultQuailFutureMan-mqRFanFl10nPjmZo",
+  "duration": 75.083,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "ster",
+  "title": "cooking",
+  "url": "https://www.twitch.tv/ster/clip/AssiduousDifficultQuailFutureMan-mqRFanFl10nPjmZo",
+  "video_id": "2941590339",
+  "views": 110,
+  "vod_offset": 10830,
+  "ia": {
+   "titulo": "ster não entendeu o que aconteceu com a granada",
+   "gancho": "ELE NÃO ENTENDEU NADA",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "ster não entendeu o que aconteceu com a granada",
+  "legenda": "ster não entendeu o que aconteceu com a granada\n\nCorte da live do ster na Twitch (twitch.tv/ster)\n\n#gta6 #gtavi #gta #ster #cortes",
+  "titulo_yt": "ster não entendeu o que aconteceu com a granada | Ster GTA 6",
+  "descricao_yt": "ster não entendeu o que aconteceu com a granada\n\nCorte da live do ster na Twitch (twitch.tv/ster)\n\n#gta6 #gtavi #gta #ster #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "ster"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "6Ars6WLxTcg",
+  "url": "https://www.youtube.com/shorts/6Ars6WLxTcg",
+  "publicar_em": null
+ },
+ "pulados": []
+}

@@ -1,0 +1,48 @@
+{
+ "id": "20261128-1600-404",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1392,168,528,304",
+  "clip_id": "HealthyPuzzledGoatTriHard-gF6GBzLWVGWhbFEC",
+  "duration": 74.521354,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "cellbit",
+  "title": "cellbit no GTA 6: 2 momentos",
+  "url": "https://www.twitch.tv/cellbit/clip/HealthyPuzzledGoatTriHard-gF6GBzLWVGWhbFEC",
+  "video_id": "2942523759",
+  "views": 190,
+  "vod_offset": 39186,
+  "ia": {
+   "titulo": "Cellbit explora a base militar em GTA 6",
+   "gancho": "OLHA ISSO",
+   "modelo": "gemini-flash-lite-latest"
+  },
+  "compilacao": [
+   "HealthyPuzzledGoatTriHard-gF6GBzLWVGWhbFEC",
+   "GiantAffluentAsteriskHassanChop-SbEXMQAEvdekOy7G"
+  ]
+ },
+ "posts": {
+  "titulo": "Cellbit explora a base militar em GTA 6",
+  "legenda": "Cellbit explora a base militar em GTA 6\n\nCortes da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes",
+  "titulo_yt": "Cellbit explora a base militar em GTA 6",
+  "descricao_yt": "Cellbit explora a base militar em GTA 6\n\nCortes da live do cellbit na Twitch (twitch.tv/cellbit)\n\n#gta6 #gtavi #gta #cellbit #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "cellbit"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "TcAADRoYG0U",
+  "url": "https://www.youtube.com/shorts/TcAADRoYG0U",
+  "publicar_em": null
+ },
+ "pulados": []
+}

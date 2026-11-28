@@ -1,0 +1,44 @@
+{
+ "id": "20261128-1200-399",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "0,124,500,276",
+  "clip_id": "EnchantingInterestingPicklesTheRinger-6-ZOIY5Yl3xLgDCj",
+  "duration": 74.017,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "xarola_",
+  "title": "PUUUUUUUUUUUUUUUUFU",
+  "url": "https://www.twitch.tv/xarola_/clip/EnchantingInterestingPicklesTheRinger-6-ZOIY5Yl3xLgDCj",
+  "video_id": "2942573694",
+  "views": 65,
+  "vod_offset": 25734,
+  "ia": {
+   "titulo": "xarola_ acha o lugar secreto no jogo",
+   "gancho": "ACHOU O LUGAR",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "xarola_ acha o lugar secreto no jogo",
+  "legenda": "xarola_ acha o lugar secreto no jogo\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes",
+  "titulo_yt": "xarola_ acha o lugar secreto no jogo | Xarola_ GTA 6",
+  "descricao_yt": "xarola_ acha o lugar secreto no jogo\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "xarola_"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "ut4C_RI3Tmg",
+  "url": "https://www.youtube.com/shorts/ut4C_RI3Tmg",
+  "publicar_em": null
+ },
+ "pulados": []
+}

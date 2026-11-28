@@ -1,0 +1,44 @@
+{
+ "id": "20261126-1000-348",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "",
+  "clip_id": "TubularProudMuleSaltBae-iOdQKPfUngadf0O9",
+  "duration": 76.016,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "alanzoka",
+  "title": "Black no Kabum",
+  "url": "https://www.twitch.tv/alanzoka/clip/TubularProudMuleSaltBae-iOdQKPfUngadf0O9",
+  "video_id": "2940381916",
+  "views": 1002,
+  "vod_offset": 11907,
+  "ia": {
+   "titulo": "Alanzoka fala sobre o cupom do GTA 6 e promoção",
+   "gancho": "OLHA ESSE CUPOM",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "Alanzoka fala sobre o cupom do GTA 6 e promoção",
+  "legenda": "Alanzoka fala sobre o cupom do GTA 6 e promoção\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes",
+  "titulo_yt": "Alanzoka fala sobre o cupom do GTA 6 e promoção",
+  "descricao_yt": "Alanzoka fala sobre o cupom do GTA 6 e promoção\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "alanzoka"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "1xEV_shjoIc",
+  "url": "https://www.youtube.com/shorts/1xEV_shjoIc",
+  "publicar_em": null
+ },
+ "pulados": []
+}

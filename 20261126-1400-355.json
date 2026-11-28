@@ -1,0 +1,48 @@
+{
+ "id": "20261126-1400-355",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1644,296,266,460",
+  "clip_id": "EsteemedAmericanChickpeaBuddhaBar-OjstdtJWJQYZfTJO",
+  "duration": 90.025333,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "thedarkness",
+  "title": "thedarkness no GTA 6: 2 momentos",
+  "url": "https://www.twitch.tv/thedarkness/clip/EsteemedAmericanChickpeaBuddhaBar-OjstdtJWJQYZfTJO",
+  "video_id": null,
+  "views": 257,
+  "vod_offset": null,
+  "ia": {
+   "titulo": "thedarkness se assusta com carro na estrada escura",
+   "gancho": "QUE ISSO NA ESTRADA",
+   "modelo": "gemini-flash-lite-latest"
+  },
+  "compilacao": [
+   "EsteemedAmericanChickpeaBuddhaBar-OjstdtJWJQYZfTJO",
+   "ViscousArborealSnakeFreakinStinkin-0kD14zEZdaP7z6OL"
+  ]
+ },
+ "posts": {
+  "titulo": "thedarkness se assusta com carro na estrada escura",
+  "legenda": "thedarkness se assusta com carro na estrada escura\n\nCortes da live do thedarkness na Twitch (twitch.tv/thedarkness)\n\n#gta6 #gtavi #gta #thedarkness #cortes",
+  "titulo_yt": "thedarkness se assusta com carro na estrada escura | Thedarkness GTA 6",
+  "descricao_yt": "thedarkness se assusta com carro na estrada escura\n\nCortes da live do thedarkness na Twitch (twitch.tv/thedarkness)\n\n#gta6 #gtavi #gta #thedarkness #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "thedarkness"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "VT5GHzktRRM",
+  "url": "https://www.youtube.com/shorts/VT5GHzktRRM",
+  "publicar_em": null
+ },
+ "pulados": []
+}

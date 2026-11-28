@@ -1,0 +1,43 @@
+{
+ "id": "20261123-1600-293",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "",
+  "clip_id": "SquarePlayfulAsteriskLitty-vx1hxrIJt8A4yqEO",
+  "duration": 73.996,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "alanzoka",
+  "title": "cple",
+  "url": "https://www.twitch.tv/alanzoka/clip/SquarePlayfulAsteriskLitty-vx1hxrIJt8A4yqEO",
+  "video_id": "2933657204",
+  "views": 92,
+  "vod_offset": 41170,
+  "ia": {
+   "titulo": "Alanzoka testa as luzes na cozinha no jogo",
+   "gancho": "O QUE COM AS LUZES",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "Alanzoka testa as luzes na cozinha no jogo",
+  "legenda": "Alanzoka testa as luzes na cozinha no jogo\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes",
+  "titulo_yt": "Alanzoka testa as luzes na cozinha no jogo | Alanzoka GTA 6",
+  "descricao_yt": "Alanzoka testa as luzes na cozinha no jogo\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "alanzoka"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "bhM_0PZNNTM",
+  "url": "https://www.youtube.com/shorts/bhM_0PZNNTM",
+  "publicar_em": null
+ },
+ "pulados": []
+}

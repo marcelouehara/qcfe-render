@@ -1,0 +1,44 @@
+{
+ "id": "20261127-2101-388",
+ "canal": "connexion",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "0,124,500,276",
+  "clip_id": "PrettyUnsightlySandstormVoHiYo-QxDcK1-k9Q8rYJQk",
+  "duration": 30.016,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "xarola_",
+  "title": "xarola_ no GTA 6",
+  "url": "https://www.twitch.tv/xarola_/clip/PrettyUnsightlySandstormVoHiYo-QxDcK1-k9Q8rYJQk",
+  "video_id": "2941628281",
+  "views": 113,
+  "vod_offset": 17676,
+  "ia": {
+   "titulo": "xarola_ abre o menu do GTA 6",
+   "gancho": "MENU DO GTA 6",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "xarola_ abre o menu do GTA 6",
+  "legenda": "xarola_ abre o menu do GTA 6\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes",
+  "titulo_yt": "xarola_ abre o menu do GTA 6",
+  "descricao_yt": "xarola_ abre o menu do GTA 6\n\nCorte da live do xarola_ na Twitch (twitch.tv/xarola_)\n\n#gta6 #gtavi #gta #xarola #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "xarola_"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "nq7NqPjY7qQ",
+  "url": "https://www.youtube.com/shorts/nq7NqPjY7qQ",
+  "publicar_em": null
+ },
+ "pulados": []
+}

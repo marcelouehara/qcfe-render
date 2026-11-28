@@ -1,0 +1,44 @@
+{
+ "id": "20261126-2101-364",
+ "canal": "connexion",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1428,120,460,256",
+  "clip_id": "PunchySlipperySpiderUWot-gdDDUQcmDN8g4kzz",
+  "duration": 30.0,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "hayashii",
+  "title": "NPC recebeu sujinha do delta cadimus",
+  "url": "https://www.twitch.tv/hayashii/clip/PunchySlipperySpiderUWot-gdDDUQcmDN8g4kzz",
+  "video_id": "2940856852",
+  "views": 135,
+  "vod_offset": 5367,
+  "ia": {
+   "titulo": "Hayashii levou uma jogada muito sujinha na corrida",
+   "gancho": "ELE JOGOU MUITO SUJO",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "Hayashii levou uma jogada muito sujinha na corrida",
+  "legenda": "Hayashii levou uma jogada muito sujinha na corrida\n\nCorte da live do hayashii na Twitch (twitch.tv/hayashii)\n\n#gta6 #gtavi #gta #hayashii #cortes",
+  "titulo_yt": "Hayashii levou uma jogada muito sujinha na corrida | Hayashii GTA 6",
+  "descricao_yt": "Hayashii levou uma jogada muito sujinha na corrida\n\nCorte da live do hayashii na Twitch (twitch.tv/hayashii)\n\n#gta6 #gtavi #gta #hayashii #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "hayashii"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "e20zFoCX9os",
+  "url": "https://www.youtube.com/shorts/e20zFoCX9os",
+  "publicar_em": null
+ },
+ "pulados": []
+}

@@ -1,0 +1,44 @@
+{
+ "id": "20261128-1000-396",
+ "canal": "qcfe",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "1594,414,306,256",
+  "clip_id": "FunBlindingInternBudBlast-z-CeXRK5GB3Cpvws",
+  "duration": 75.0,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "move_mind",
+  "title": "O carro estava a arrefecer, tinha sobreaquecido.",
+  "url": "https://www.twitch.tv/move_mind/clip/FunBlindingInternBudBlast-z-CeXRK5GB3Cpvws",
+  "video_id": "2942540295",
+  "views": 36,
+  "vod_offset": 9452,
+  "ia": {
+   "titulo": "move_mind lembra que não dá para fazer load game",
+   "gancho": "NÃO TEM LOAD GAME",
+   "modelo": "gemini-3.5-flash"
+  }
+ },
+ "posts": {
+  "titulo": "move_mind lembra que não dá para fazer load game",
+  "legenda": "move_mind lembra que não dá para fazer load game\n\nCorte da live do move_mind na Twitch (twitch.tv/move_mind)\n\n#gta6 #gtavi #gta #movemind #cortes",
+  "titulo_yt": "move_mind lembra que não dá para fazer load game | Move_mind GTA 6",
+  "descricao_yt": "move_mind lembra que não dá para fazer load game\n\nCorte da live do move_mind na Twitch (twitch.tv/move_mind)\n\n#gta6 #gtavi #gta #movemind #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "move_mind"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "sBZno0Cyeq0",
+  "url": "https://www.youtube.com/shorts/sBZno0Cyeq0",
+  "publicar_em": null
+ },
+ "pulados": []
+}

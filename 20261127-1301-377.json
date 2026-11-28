@@ -1,0 +1,44 @@
+{
+ "id": "20261127-1301-377",
+ "canal": "connexion",
+ "status": "ok",
+ "teste": false,
+ "clip": {
+  "cam": "",
+  "clip_id": "CautiousRichDunlinKlappa-AyZr-eEU6xr4KExZ",
+  "duration": 35.015,
+  "gx": 960,
+  "layout": "cam_top",
+  "streamer": "alanzoka",
+  "title": "vai dormir quando????",
+  "url": "https://www.twitch.tv/alanzoka/clip/CautiousRichDunlinKlappa-AyZr-eEU6xr4KExZ",
+  "video_id": "2941507793",
+  "views": 418,
+  "vod_offset": 6378,
+  "ia": {
+   "titulo": "Alanzoka fala que so vai dormir quando morrer",
+   "gancho": "VOU DORMIR QUANDO",
+   "modelo": "gemini-flash-lite-latest"
+  }
+ },
+ "posts": {
+  "titulo": "Alanzoka fala que so vai dormir quando morrer",
+  "legenda": "Alanzoka fala que so vai dormir quando morrer\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes",
+  "titulo_yt": "Alanzoka fala que so vai dormir quando morrer | Alanzoka GTA 6",
+  "descricao_yt": "Alanzoka fala que so vai dormir quando morrer\n\nCorte da live do alanzoka na Twitch (twitch.tv/alanzoka)\n\n#gta6 #gtavi #gta #alanzoka #cortes #shorts",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "gta6",
+   "cortes",
+   "alanzoka"
+  ]
+ },
+ "youtube": {
+  "status": "ok",
+  "id": "6aUg1Q_ql5o",
+  "url": "https://www.youtube.com/shorts/6aUg1Q_ql5o",
+  "publicar_em": null
+ },
+ "pulados": []
+}
